@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddressActivity">
+
+    <EditText
+        android:id="@+id/editTextCityA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="12"
+        android:hint="Город"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <EditText
+        android:id="@+id/editTextStreetA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="12"
+        android:hint="Улица"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCityA"
+        app:layout_constraintVertical_bias="0.04" />
+
+    <EditText
+        android:id="@+id/editTextHouseA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="12"
+        android:hint="Дом"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextStreetA"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <EditText
+        android:id="@+id/editTextCityB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="12"
+        android:hint="Город"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPointB"
+        app:layout_constraintVertical_bias="0.06" />
+
+    <EditText
+        android:id="@+id/editTextStreetB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="12"
+        android:hint="Улица"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCityB"
+        app:layout_constraintVertical_bias="0.08" />
+
+    <EditText
+        android:id="@+id/editTextHouseB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="12"
+        android:hint="Дом"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextStreetB"
+        app:layout_constraintVertical_bias="0.11" />
+
+    <Button
+        android:id="@+id/buttonOK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@android:string/ok"
+        android:textSize="16sp"
+        app:iconSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.9" />
+
+    <TextView
+        android:id="@+id/textViewPointA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Откуда:"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextCityA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewPointB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Куда:"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextHouseA"
+        app:layout_constraintVertical_bias="0.085" />
+
+    <TextView
+        android:id="@+id/textViewFIO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="КОЗЛОВИЧ АНТОН АЛЕКСАНДРОВИЧ"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
